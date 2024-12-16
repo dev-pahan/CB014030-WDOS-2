@@ -1,0 +1,55 @@
+[
+    {
+        "category": "Analgesics",
+        "items": [
+            { "id": "paracetamol", "name": "Paracetamol", "price": 5, "image": "images/analgesics1.webp" },
+            { "id": "ibuprofen", "name": "Ibuprofen", "price": 12, "image": "images/analgesics2.webp" },
+            { "id": "aspirin", "name": "Aspirin", "price": 8, "image": "images/analgesics3.webp" },
+            { "id": "diclofenac", "name": "Diclofenac", "price": 15, "image": "images/analgesics4.webp" },
+            { "id": "tramadol", "name": "Tramadol", "price": 20, "image": "images/analgesics5.webp" },
+            { "id": "naproxen", "name": "Naproxen", "price": 18, "image": "images/analgesics6.webp" }
+        ]
+    },
+    {
+        "category": "Antibiotics",
+        "items": [
+            { "id": "amoxicillin", "name": "Amoxicillin", "price": 10, "image": "images/antibiotics1.webp" },
+            { "id": "azithromycin", "name": "Azithromycin", "price": 13, "image": "images/antibiotics2.webp" },
+            { "id": "ciprofloxacin", "name": "Ciprofloxacin", "price": 15, "image": "images/antibiotics3.webp" },
+            { "id": "doxycycline", "name": "Doxycycline", "price": 21, "image": "images/antibiotics4.webp" },
+            { "id": "metronidazole", "name": "Metronidazole", "price": 14, "image": "images/antibiotics5.webp" },
+            { "id": "clindamycin", "name": "Clindamycin", "price": 17, "image": "images/antibiotics6.webp" }
+        ]
+    },
+    {
+        "category": "Antidepressants",
+        "items": [
+            { "id": "sertraline", "name": "Sertraline", "price": 27, "image": "images/antidepressants1.webp" },
+            { "id": "fluoxetine", "name": "Fluoxetine", "price": 25, "image": "images/antidepressants2.webp" },
+            { "id": "escitalopram", "name": "Escitalopram", "price": 30, "image": "images/antidepressants3.webp" },
+            { "id": "bupropion", "name": "Bupropion", "price": 28, "image": "images/antidepressants4.webp" },
+            { "id": "venlafaxine", "name": "Venlafaxine", "price": 32, "image": "images/antidepressants5.webp" },
+            { "id": "duloxetine", "name": "Duloxetine", "price": 29, "image": "images/antidepressants6.webp" }
+        ]
+    },
+    {
+        "category": "Antihistamines",
+        "items": [
+            { "id": "cetirizine", "name": "Cetirizine", "price": 7, "image": "images/antihistamines1.webp" },
+            { "id": "loratadine", "name": "Loratadine", "price": 9, "image": "images/antihistamines2.webp" },
+            { "id": "fexofenadine", "name": "Fexofenadine", "price": 11, "image": "images/antihistamines3.webp" },
+            { "id": "diphenhydramine", "name": "Diphenhydramine", "price": 6, "image": "images/antihistamines4.webp" }
+        ]
+    },
+    {
+        "category": "Antihypertensives",
+        "items": [
+            { "id": "lisinopril", "name": "Lisinopril", "price": 17, "image": "images/antihypertensives1.webp" },
+            { "id": "amlodipine", "name": "Amlodipine", "price": 28, "image": "images/antihypertensives2.webp" },
+            { "id": "losartan", "name": "Losartan", "price": 26, "image": "images/antihypertensives3.webp" },
+            { "id": "metoprolol", "name": "Metoprolol", "price": 22, "image": "images/antihypertensives4.webp" },
+            { "id": "hydrochlorothiazide", "name": "Hydrochlorothiazide", "price": 14, "image": "images/antihypertensives5.webp" },
+            { "id": "enalapril", "name": "Enalapril", "price": 20, "image": "images/antihypertensives6.webp" }
+        ]
+    }
+]

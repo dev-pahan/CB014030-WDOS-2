@@ -1,0 +1,227 @@
+/* Root Variables */ 
+:root {
+    --primary-color: #476088;
+    --secondary-color: #ffffff;
+    --text-color: #3B365F;
+    --text-color2: hsl(204, 97%, 59%);
+    --hover-text-color: #0982d3;
+    --card-background-color: #ecf0f1;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hoverScale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* General Styles */
+body {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    justify-content: space-between; 
+    position: fixed; /* Fix header to the top */
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; /* Ensure header stays on top */
+    font-size: larger;
+}
+
+/* Logo Styles */
+.logo img {
+    height: 60px; 
+}
+
+/* Navbar Styles */
+.navbar {
+    position: absolute;
+    right: 0; 
+    margin-right: 30px; 
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    white-space: nowrap; 
+}
+
+.navbar ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--hover-text-color);
+}
+
+nav ul li a.active {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+nav ul li a.alwaysactive {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+/* Main Section */
+main {
+    margin-top: 95px; 
+}
+
+/* Introduction Section */
+.intro {
+    margin: 20px;
+    text-align: center; /* Center text and inline elements */
+}
+
+.intro h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    color: var(--text-color);
+    animation: fadeIn 2s ease-out;
+}
+
+.intro p {
+    font-family: "poppins", sans-serif;
+    font-size: 1.7em;
+    font-weight: 800;
+    color: var(--text-color)
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    height: 40px; 
+}
+
+/* Responsive Styles - Mobile Only */
+@media (max-width: 1450px) {
+    
+    /* Navbar adjustments for mobile */
+    .navbar {
+        position: static;
+        transform: none;
+        order: 1; 
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 2px 4px var(--shadow-color);
+        z-index: 1001; /* Ensure menu is above content */
+    }
+
+    .navbar ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 20px;
+    }
+
+    /* Hamburger Menu Styles */
+    .menu-toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile only */
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 30px; /* Position hamburger */
+        z-index: 1002; /* Ensure hamburger is above content */
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 4px;
+        background-color: var(--secondary-color);
+        margin: 2px 0;
+        transition: 0.4s;
+    }
+
+    /* Toggle menu visibility when hamburger is clicked */
+    .menu-toggle:checked + .hamburger + .navbar ul {
+        display: flex;
+        background-color: var(--primary-color);
+    }
+
+    /* Animation for hamburger */
+    .hamburger span {
+        background-color: var(--secondary-color); 
+    }
+}
+
+/* Hide checkbox in desktop view */
+@media (min-width: 1270px) {
+    .menu-toggle {
+        display: none; /* Hide checkbox on desktop */
+    }
+}
+
+

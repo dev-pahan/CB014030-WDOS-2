@@ -1,0 +1,91 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 835px;
+    width: auto;
+    background-image: url('../images/3.webp');
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Registration Link Styles */
+.register-link {
+    display: inline-block; /* Allow the link to be centered */
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 700; /* Use Poppins font weight */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.register-link:hover {
+    background-color: var(--primary-color); /* Use a different hover color */
+    transform: scale(1.05);
+}
+
+/* Services Flexbox Styles */
+.services {
+    padding: 0px 20px; 
+    margin-bottom: 50px;
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in animation */
+}
+
+.services-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    max-width: 100%; 
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.service-item {
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(100% - 40px); /* Full width on mobile screens */
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.6s ease-in-out; /* Fade-in for each service */
+}
+
+.service-item img {
+    height: auto;
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    font-weight: 700; /* Use Poppins font weight */
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.3em;
+    color: #666;
+}
+
+/* Media Queries for Responsive Styling */
+@media (max-width: 540px) {
+
+    .service-item p {
+        font-size: 1.3em;
+    }
+}

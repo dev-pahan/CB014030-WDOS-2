@@ -1,0 +1,86 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 835px;
+    width: auto;
+    background-image: url('../images/6.webp');
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Contact Form Section */
+.contact-section {
+    padding: 20px 30px;
+    margin-top: 30px; 
+}
+
+.form-section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px; /* Set a max-width for the form box */
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to make it stand out */
+    text-align: center; /* Center align text within the form box */
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in animation */
+}
+
+.form-section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+}
+
+label {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, textarea {
+    font-size: 1em;
+    width: 100%;
+    max-width: 100%; /* Ensure the elements do not exceed the width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    text-align: left; /* Keep the text left-aligned inside the elements */
+    margin-left: 10px; 
+    margin-right: 10px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-button:hover {
+    animation: hoverScale 0.3s ease forwards; /* Hover scale animation */
+}

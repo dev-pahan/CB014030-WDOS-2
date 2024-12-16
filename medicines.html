@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines - Lanka Care</title>
+    <link rel="stylesheet" href="css/medicines.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo3trans.webp" alt="Logo">
+            </a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="appointment.html">Book an Appointment</a></li>
+                <li><a href="medicines.html" class="active">Medicines</a></li>
+                <li><a href="checkout.html" class="alwaysactive">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+        </div>
+
+        <!-- Cart Section -->
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="total-price">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="actions">
+                <button onclick="saveToFavourites()">Save to Favourites</button>
+                <button onclick="applyFavourites()">Apply Favourites</button>
+                <button onclick="resetCart()">Reset Cart</button>
+                <button onclick="proceedToCheckout()">Checkout</button>
+            </div>
+        </section>     
+
+        <!-- Medicines Section -->
+        <section class="categories">
+            <h2>Select Medicines</h2>
+            <div id="medicine-container">
+                <!-- Catogories and medicines will be dynamically loaded here-->
+            </div>
+        </section>        
+
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <img src="images/logo4trans.webp" alt="Lanka Care Logo" class="footer-logo">
+        <p>&copy; 2024 Lanka Care. All rights reserved.</p>
+    </div>
+
+    <script src="scripts/order.js" defer></script>
+</body>
+</html>

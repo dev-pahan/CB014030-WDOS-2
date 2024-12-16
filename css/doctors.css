@@ -1,0 +1,87 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 835px;
+    width: auto;
+    background-image: url('../images/4.webp');
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Doctors Grid Styles */
+.doctors {
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.doctors h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create as many columns as fit, with each column at least 250px wide, but flexible to grow */
+    gap: 20px;
+}
+
+.doctor-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.doctor-item {
+    background-color: var(--card-background-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.doctor-item img {
+    height: 206px;
+    width: 206px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.doctor-item h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.doctor-item p {
+    font-size: 1.3em;
+    color: #666;
+}
+
+/* Media Queries for Responsive Styling */
+@media (max-width: 540px) {
+
+    .doctors h2 {
+        font-size: 2.1em;
+    }
+
+    .doctor-item h3 {
+        font-size: 1.4em;
+    }
+
+    .doctor-item p {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Lanka Care</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo3trans.webp" alt="Lanka Care Logo">
+            </a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="appointment.html">Book an Appointment</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="checkout.html" class="alwaysactive">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Cart Summary Section -->
+        <section class="cart-summary">
+            <h3>Your Cart</h3>
+            <ul id="cart-items">
+                <!-- Dynamic items will be added here -->
+            </ul>
+            <p><strong>Total: <span id="total-price">0</span></strong></p>
+            <button type="button" class="reset-button" onclick="resetForm()">Reset Cart</button>
+        </section>
+
+        <!-- Checkout Form Section -->
+        <section class="checkout">
+            <div class="form-section">
+                <h2>Personal Details</h2>
+                <form id="checkout-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                    <h2>Delivery Information</h2>
+                    <label for="address">Address:</label>
+                    <textarea id="address" required></textarea>
+
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="date" id="delivery-date" required>
+
+                    <h2>Payment Details</h2>
+                    <label for="payment-method">Select Payment Method:</label>
+                    <select id="payment-method" required>
+                        <option value="" disabled selected>Select a Payment Method</option>
+                        <option value="cod">Cash on Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                    </select>                    
+
+                    <div id="card-details" style="display: none;">
+
+                        <label for="name-on-card">Name on Card:</label>
+                        <input type="text" id="name-on-card" maxlength="16">
+                        
+                        <label for="card-number">Card Number:</label>
+                        <input type="number" id="card-number" maxlength="16">
+
+                        <label for="expiry">Expiry:</label>
+                        <input type="month" id="expiry">
+
+                        <label for="cvv">CVV:</label>
+                        <input type="number" id="cvv" maxlength="3">
+                    </div>
+
+                    <button type="submit" class="submit-button">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <img src="images/logo4trans.webp" alt="Lanka Care Logo" class="footer-logo">
+        <p>&copy; 2024 Lanka Care. All rights reserved.</p>
+    </div>
+
+    <script src="scripts/checkout.js" defer></script>
+</body>
+</html>

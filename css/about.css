@@ -1,0 +1,201 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 835px;
+    width: auto;
+    background-image: url('../images/2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Branches Section */
+.branches {
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in animation */
+}
+
+.branches h2 {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.branch {
+    margin-bottom: 20px;
+}
+
+.branch-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.branch img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.3s ease-in-out; /* Fade-in for branch images */
+}
+
+.branch-details {
+    text-align: center;
+    animation: fadeIn 1.4s ease-in-out; /* Fade-in animation */
+}
+
+.branch-details h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.branch-details p {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Styles for the map iframes */
+.map-iframe {
+    border: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    margin: 0 auto; /* Center the iframe */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Summary Table Section */
+.summary-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+    animation: fadeIn 1.6s ease-in-out; /* Fade-in animation */
+}
+
+.summary-table h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+table {
+    font-size: large;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+table:hover {
+    animation: hoverScale 0.3s ease forwards; /* Hover scale animation */
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+table tfoot td {
+    font-size: large;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    text-align: center;
+    animation: fadeIn 1.7s ease-in-out; /* Fade-in animation */
+}
+
+.footer p {
+    color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1162px) {
+    .branch-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .branch img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .branch-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    .branches h2 {
+        font-size: 2.3em;
+    }
+
+    .branch-details p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 320px) {
+    .summary-table {
+        padding: 0 10px; 
+    }
+
+    table {
+        font-size: 0.8em; 
+    }
+}

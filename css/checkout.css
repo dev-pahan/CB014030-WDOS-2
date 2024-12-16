@@ -1,0 +1,222 @@
+/* Cart Summary */
+.cart-summary {
+    background: var(--card-background, #f9f9f9); /* Fallback background color */
+    margin: 30px auto;
+    padding: 20px 30px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-summary h3 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#cart-items li {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset Button inside the cart */
+.reset-button {
+    background-color: #f44336; /* Red background for reset */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f; /* Darker red for hover */
+    transform: scale(1.05);
+}
+
+/* Checkout Form */
+.checkout {
+    padding: 20px 30px;
+}
+
+.form-section {
+    margin: 30px auto;
+    padding: 20px 30px;
+    max-width: 600px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+input, textarea {
+    font-size: 1em;
+    padding: 12px 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+select {
+    font-size: 1em;
+    padding: 12px 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer p {
+    color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-summary, .form-section {
+        padding: 15px; 
+        margin: 15px;
+        max-width: 100%; 
+    }
+
+    .cart-summary h3, .form-section h2 {
+        font-size: 1.5em; 
+    }
+
+    #cart-items li {
+        font-size: 0.9em; 
+        padding: 8px 10px; 
+    }
+
+    input, textarea, select {
+        font-size: 0.9em; 
+        padding: 10px; 
+    }
+
+    button[type="submit"], .reset-button {
+        font-size: 1em; 
+        width: 100%; 
+        max-width: 300px; 
+    }
+}
+
+@media (max-width: 540px) {
+    .cart-summary, .form-section {
+        padding: 10px; 
+        margin: 10px; 
+    }
+
+    .cart-summary h3, .form-section h2 {
+        font-size: 1.3em; 
+    }
+
+    #cart-items li {
+        font-size: 0.85em; 
+        padding: 6px 8px; 
+    }
+
+    input, textarea, select {
+        font-size: 0.85em; 
+        padding: 8px; 
+    }
+
+    button[type="submit"], .reset-button {
+        font-size: 0.9em; 
+        width: 100%; 
+    }
+
+    .reset-button {
+        margin-top: 15px; 
+    }
+}
+

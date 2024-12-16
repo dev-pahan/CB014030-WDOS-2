@@ -1,0 +1,182 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 835px;
+    width: auto;
+    background-image: url('../images/1.webp');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Services Flexbox Styles */
+.services {
+    padding: 0px 20px; 
+    margin-bottom: 50px;
+    animation: fadeIn 1.2s ease-in-out; /* Fade-in animation */
+}
+
+.services-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.service-item {
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(100% - 40px);
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.3s ease-in-out; /* Fade-in for each service */
+}
+
+.service-item img {
+    height: auto;
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.3em;
+    color: #666;
+}
+
+/* List Section Styles */
+.list-section {
+    margin-bottom: 50px;
+    text-align: center;
+    animation: fadeIn 1.4s ease-in-out; /* Fade-in animation */
+}
+
+.list-section h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.list-section ul, .list-section ol {
+    padding: 0;
+    list-style-position: inside; 
+    display: inline-block;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.list-section ul li, .list-section ol li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Doctors Grid Styles */
+.doctors {
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.doctors h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create as many columns as fit, with each column at least 250px wide, but flexible to grow */
+    gap: 20px;
+}
+
+.doctor-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.doctor-item {
+    background-color: var(--card-background-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.doctor-item img {
+    height: 206px;
+    width: 206px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.doctor-item h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.doctor-item p {
+    font-size: 1.3em;
+    color: #666;
+}
+
+/* Media Queries for Responsive Styling */
+@media (max-width: 540px) {
+    .sub-section h2 {
+        font-size: 1.7em;
+    }
+    
+    .sub-section p {
+        font-size: 1.2em;
+    }
+
+    .list-section h2 {
+        font-size: 1.7em;
+    }
+
+    .list-section ul, .list-section ol {
+        font-size: 1.2em;
+    }
+
+    .doctors h2 {
+        font-size: 2.1em;
+    }
+
+    .doctor-item h3 {
+        font-size: 1.4em;
+    }
+
+    .doctor-item p {
+        font-size: 1.2em;
+    }
+}
